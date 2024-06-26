@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy Light';
+    color: black;
+    cursor: pointer;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.graphs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph {
+    width: 30%;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#loader{
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+    position: fixed; /*its posn will be fixed therfore available on top of main*/
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#loader h1{
+    font-family: bodoni mt;
+    font-size: 100px;
+    color:  #FF725C;
+    font-weight: 999;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    border-bottom: 2px solid #dadada;
+}
+.nav a{
+    text-decoration: none;
+}
+.nav a:hover{
+    color: #FF725C;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #dadada;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    background-color: #FF725C;
+}
+.nav h1{
+    font-weight: bold;
+    margin-left: 2.2vw;
+}
+.nav i{
+    font-size: 1.65vw;
+    font-weight: bolder;
+    display: none;
+}
+.navpart2 {
+    display: flex;
+    color: #FCFEFE;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    gap: 4vw;
+
+}
+.navpart2 span{
+    background-color: #FF725C;
+    border-radius: 5px;
+    padding: 0.5vw 1.5vw;
+    color: #fff;
+    font-weight: bolder;
+}
+.navpart2 h4:hover{
+    color: #FF725C;
+}
+.content{
+    height: calc(100% - 100px); /*this function is used to provide arithemetic operations*/
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    padding: 5vw 5vw;
+}
+.left input{
+    width: 30%;
+}
+.left h2{
+    margin-top: 5vh;
+}
+.left h5{
+    margin: 2.5vw  0;
+}
+.left input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 2px solid #dadada;
+    background: transparent;
+    outline: none;
+    font-size: 2.2vh;
+}
+.left input[type="submit"]{
+  
+    font-size: 1.5vw;
+    padding: 1.1vw 1.1vw;
+    background-color: #FF725C;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 999;
+}
+.left input[type="submit"]:hover{
+    color: #d9d8d8;
+}
+.left h1{
+    font-size: 4vw;
+    font-weight: bolder;
+    color: black;
+    padding-top: 1.5vh;
+}
+.left #name{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-right: 6vw;
+    letter-spacing: -0.1vw;
+    color: #FF725C;
+
+}
+.left p{
+    font-size: 1.5vw;
+    font-weight: 700;
+    width: 80%;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+}
+#acc:hover{
+    color: #FF725C;
+}
+#acc{
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+}
+
+.left a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding: 1.1vw 2.1vw;
+    background-color: #FF725C;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 999;
+}
+
+.left span{
+    font-size: 3vw;
+    background-color: #000;
+    border-radius: 50px;
+    padding: 0.5vw 1.5vw;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.right{
+    height: 100%;
+    width: 50%;
+
+}
+.right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#footer2{
+    height: 150px;
+    width: 100%;
+    background-color: #FF725C;
+    display: flex;
+    margin-top: 30px;
+    padding: 0 5vw;
+    justify-content: space-between;
+    align-items: center;
+}
+#cube1 h3{
+    color: white;
+}
+#cube2 h3{
+    color: white;
+}
+#footer2 h3:hover{
+    color: #d9d8d8;
+}
+@media (max-width:600px) {
+    .nav{
+        height: 80px;
+    }
+    .nav h1{
+        font-size: 6vw;
+    }
+    .nav h4{
+        font-size: 3.5vw;
+        display: none;
+
+    }
+    .nav i{
+        display: block;
+        font-size:  5vw;
+    }
+    .content{
+        height: calc(100% - 80px);
+        flex-direction: column;
+
+    }
+    .left{
+        width: 100%;
+        height: 100%;
+    }
+    .left h1{
+        font-size: 9vw;
+        display: inline-block;
+    }
+    .left p{
+        margin-top: 4vw;
+        width: 100%;
+        font-size: 4vw;
+    }
+    .left #footer{
+        display: flex;
+        margin-top: 14vw;
+    }
+    .left a{
+        margin-top: 4vw;
+        width: 100%;
+        font-size: 4vw;
+        padding-right: 5.5vw;
+        display: flex;
+    }
+    .navpart2 h4:hover{
+        color: #FF725C;
+    }
+    
+    .right{
+        width: 100%;
+    }
+    .right img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    button{
+        margin-top: 3vw;
+        font-size: 3.5vw;
+        padding: 2.2vw 4.2vw;
+    }
+}

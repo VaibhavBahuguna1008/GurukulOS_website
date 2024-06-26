@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="progress.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="bar">
+            <div class="sidebar">
+                <i class="ri-menu-line"></i>
+                <div class="sbpart2">
+                    <a href="timetable.html">TimeTable</a>
+                    <a href="assgnment.html">Assignment</a>
+                    <a href="test.html">Tests</a>
+                    <a style="background-color: #ff9888; border-radius: 50px;">Progress</a>
+                </div>
+            </div>
+            <div class="nav">
+                <h1>Gurukul OS</h1>
+                <div class="navpart2">
+                    <a href ="profile.html">My profile</a>
+                    <a href ="index.html">Home</a>
+                    <a href="login.html"><span>Sign In</span></a>
+                    <i class="ri-menu-3-line"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="left">
+                <h1 >Progress</h1>
+                <h2>Report</h2>
+                <input type="text" name="" placeholder="Search month">
+                <button><i class="ri-arrow-down-s-line" style="color: white;"></i></button>
+                <div class="detail">
+                    <div class="left1">
+                        <h4>Subjects</h4>
+                    </div>
+                    <div class="right">
+                        <h4>GPA</h4>
+                        <h4>Score</h4>
+                        <h4>Rank</h4>
+                    </div>
+                </div>
+                <div class="data1">
+                    <div class="left1">
+                        <img src="https://img.freepik.com/free-vector/seamless-pattern-with-school-office-stationery_107791-9568.jpg?w=740&t=st=1696492035~exp=1696492635~hmac=af65add94b6f13faa66ddee0bf987c88f63e59c63e581ffb956febb17dec0c23" alt="">
+                        <div class="Assgnname">
+                            <h2>Maths</h2>
+                            <h3>Peter Smith</h3>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h4>10</h4>
+                        <h4>98/100</h4>
+                        <h4>10</h4>
+                    </div>
+                </div>
+                <div class="data1">
+                    <div class="left1">
+                        <img src="https://img.freepik.com/free-vector/software-developers-during-coding-composition-with-creative-decisions-algorithmic-complexity-documentation-by-programming-languages-isometric_1284-33290.jpg?w=740&t=st=1696497053~exp=1696497653~hmac=d84982749ac07814c2982264a955fcdf5cc6ae56837965abc910c2b541eb135d" alt="">
+                        <div class="Assgnname">
+                            <h2>Comp. Sc.</h2>
+                            <h3>Chandler</h3>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h4>10</h4>
+                        <h4>88/100</h4>
+                        <h4>9.26</h4>
+                    </div>
+                </div>
+                <section class="graphs">
+                    <div class="graph">
+                        <h2>Student Grades</h2>
+                        <canvas id="gradeChart" width="400" height="200"></canvas>
+                    </div>
+        
+                    <div class="graph">
+                        <h2>Behavior Analysis</h2>
+                        <canvas id="behaviorChart" width="400" height="200"></canvas>
+                    </div>
+        
+                    <div class="graph">
+                        <h2>Time Spent (minutes)</h2>
+                        <canvas id="timeSpentChart" width="400" height="200"></canvas>
+                    </div>
+                </section>
+            </div> 
+            <div class="right">
+                <img src="https://img.freepik.com/free-vector/personal-goals-concept-illustration_114360-5616.jpg?w=740&t=st=1695112543~exp=1695113143~hmac=11f49d78c99e59d09fa31be5bebee572237c42b8e3a32570edac785f9d7ed80c" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="progress.js"></script>
+</body>
+</html>

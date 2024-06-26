@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div id="loader"><h1>0%</h1></div>
+    <div class="main">
+        <div class="nav">
+            <h1>Gurukul OS</h1>
+            <div class="navpart2">
+                <a href="Aboutus.html">About us</a>
+                <a href="index.html">Home</a>
+                <i class="ri-menu-3-line"></i>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h3 >Welcome!</h3>
+                <h1 style="color:  #FF725C;">Login <span id="who">Student</span></h1>
+                <form action="login.php" method="post">
+                    <h2>Username</h2>
+                    <h5><input type="text" name="" placeholder="Enter Username" id="email" name="email" required></h5>
+                    <h2>Password</h2>
+                    <h5><input type="password" name="" placeholder="Enter password" id="password" name="password" required></h5>
+                    <h4><input type="submit" name="" value="login"></h4>
+                    <h3 id="acc">Create New account</h3>
+                    <a href="https://www.google.com/account/about/?hl=en&utm_source=google-account&utm_medium=web">Continue with <i class="ri-google-fill" style="color: white; font-weight: 100; text-decoration: none;"></i></a>
+                </form>
+            </div>
+            <div class="right">
+                <img src="https://img.freepik.com/free-vector/tablet-login-concept-illustration_114360-7863.jpg?w=740&t=st=1695125224~exp=1695125824~hmac=0c0178ce7185eea963030403c8f5a65435b2650b309b321698413b46f10aa58f" alt="">
+            </div>
+        </div>
+        <div id="footer2">
+            <div id="cube1">
+                <h3>/ Contact us</h3>
+                <h3 style="padding-top: 15px;">Credits</h3>
+                <h3 style="padding-top: 15px;">Mentions</h3>
+            </div>
+            <div id="cube2" >
+                <h3 style="text-align: end">Based in Delhi</h3>
+                <h3 style="padding-top: 15px; text-align: end">Our projects</h3>
+                <h3 style="padding-top: 15px; text-align: end;">Our team</h3>
+            </div>  
+        </div>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <!-- Header content here -->
+    </header>
+
+    <main>
+        <section class="student-info">
+            <!-- Student information section -->
+        </section>
+
+        <section class="graphs">
+            <div class="graph">
+                <h2>Student Grades</h2>
+                <canvas id="gradeChart" width="400" height="200"></canvas>
+            </div>
+
+            <div class="graph">
+                <h2>Behavior Analysis</h2>
+                <canvas id="behaviorChart" width="400" height="200"></canvas>
+            </div>
+
+            <div class="graph">
+                <h2>Time Spent (minutes)</h2>
+                <canvas id="timeSpentChart" width="400" height="200"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

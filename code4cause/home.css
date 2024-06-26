@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy Light';
+    color: black;
+    cursor: pointer;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#loader{
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+    position: fixed; /*its posn will be fixed therfore available on top of main*/
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#loader h1{
+    font-family: bodoni mt;
+    font-size: 100px;
+    color:  #FF725C;
+    font-weight: 999;
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+.bar{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.sidebar{
+    background-color: #FF725C;
+    height: 100%;
+    width: 220px;
+    padding: 2.2vw 0px;
+    align-items: start;
+    border-right: 2px solid #dadada;
+    position: fixed;
+}
+.sidebar a{
+    width: 220px;
+    padding: 2vh 0vh;
+    font-size: 1.5vw;
+    margin: 7vw 0vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: white;
+}
+.sidebar i{
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin: 0 6vw;
+    color: white;
+}
+.sbpart2 i{
+    display: none;
+}
+.sidebar .ri-menu-line:hover{
+    transition: 0.5s;
+    transform: translate(-50%,-50%) rotateY(180deg);
+}
+.sbpart2 a{
+    text-decoration: none;
+}
+.sidebar a:hover{
+    background-color: #ff9888;
+    border-radius: 50px;
+}
+.icons i{
+    margin: 1vw;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5vw;
+    color: white;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    border-bottom: 2px solid #dadada;
+}
+.nav h1{
+    font-weight: bold;
+    margin-left: 17.8vw;
+}
+.nav i{
+    font-size: 1.65vw;
+    font-weight: bolder;
+    display: none;
+}
+.navpart2 {
+    display: flex;
+    color: #FCFEFE;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    gap: 4vw;
+
+}
+.navpart2 a{
+    text-decoration: none;
+}
+.navpart2 a:hover{
+    color: #FF725C;
+}
+.navpart2 span{
+    background-color: #FF725C;
+    border-radius: 5px;
+    padding: 0.5vw 1.5vw;
+    color: #fff;
+    font-weight: bolder;
+}
+.navpart2 span:hover{
+    color: #d9d8d8;
+}
+
+.content{
+    height: calc(100% - 100px); /*this function is used to provide arithemetic operations*/
+    width: calc(100% - 220px);
+    float: right;
+    display: flex;
+    transform: translateY(18%);
+    position: relative;
+    
+}
+.left{
+    height: 100%;
+    width: 50%;
+    padding: 5vw 5.5vw;
+}
+.left h1{
+    font-size: 4vw;
+    font-weight: bolder;
+    color: black;
+}
+#name{
+    width: 20vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-right: 6vw;
+    letter-spacing: -0.1vw;
+    color: #FF725C;
+    transition: all ease 0.5s;
+
+}
+#name:hover{
+    transform: translateX(4%);
+}
+.left p{
+    font-size: 1.5vw;
+    font-weight: 700;
+    width: 80%;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+}
+button{
+    font-size: 1.5vw;
+    padding: 1.1vw 2.1vw;
+    background-color: #FF725C;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 999;
+}
+button:hover{
+    color: #d9d8d8;
+}
+.right{
+    height: 100%;
+    width: 50%;
+
+}
+.right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#footer{
+    height: 150px;
+    width: calc(100% - 220px);
+    background-color: #FF725C;
+    display: flex;
+    margin-top: 40px;
+    padding: 0 5vw;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(40%);
+    float: right;
+}
+#cube1 h3{
+    color: white;
+}
+#cube2 h3{
+    color: white;
+}
+#footer h3:hover{
+    color: #d9d8d8;
+}
+@media (max-width:600px) {
+    .sidebar{
+        background-color: #FF725C;
+        height: 100%;
+        width: 100px;
+        padding: 2.2vw 0px;
+        align-items: start;
+        border-right: 2px solid #dadada;
+        position: fixed;
+    }
+    .sbpart2{
+        margin-top: 20vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sidebar a{
+        width: 100px;
+        font-size: 3.5vw;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: bold;
+        color: white;
+        display: none;
+    }
+    .sidebar i{
+        font-size: 5vw;
+        display: flex;
+        margin: 5vw;
+        justify-content: center;
+
+        font-weight: bold;
+
+        color: white;
+    }
+    .sbpart2 i{
+        font-size: 5vw;
+        display: flex;
+
+        justify-content: center;
+
+        font-weight: bold;
+        margin: 8vw 5vw;
+        color: white;
+    }
+    .nav{
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .nav h1{
+        font-size: 5vw;
+        
+    }
+    .navpart2 {
+        display: flex;
+        color: #FCFEFE;
+        font-size: 3vw;
+        font-weight: bolder;
+        gap: 4vw;
+        display: none;
+    
+    }
+    .navpart2 a{
+        text-decoration: none;
+    }
+    .navpart2 a:hover{
+        color: #FF725C;
+    }
+    .navpart2 span{
+        background-color: #FF725C;
+        border-radius: 5px;
+        padding: 0.5vw 1.5vw;
+        color: #fff;
+        font-weight: bolder;
+    }
+    .content{
+        right: 3%;
+        margin: 0 9vw;
+        height: calc(100% - 80px);
+        flex-direction: column;
+
+    }
+    .left{
+        width: 100%;
+        height: 100%;
+    }
+    .left h1{
+        font-size: 9vw;
+        display: inline-block;
+    }
+    .left p{
+        margin-top: 4vw;
+        width: 100%;
+        font-size: 4vw;
+    }
+    .right{
+        width: 100%;
+    }
+    .right img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    button{
+        margin-top: 3vw;
+        font-size: 3.5vw;
+        padding: 2.2vw 4.2vw;
+    }
+}

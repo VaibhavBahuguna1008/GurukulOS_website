@@ -1,0 +1,40 @@
+/* styles.css */
+/* Global styles for the body and layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007acc;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.graphs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph {
+    width: 30%;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Add specific styles for your charts */
+
+/* Add styles for student information, footer, and other elements as needed */
